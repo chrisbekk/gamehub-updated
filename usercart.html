@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="src/usercart.js" type="module" defer></script>
+
+    <title>Store</title>
+</head>
+<body>
+    <header class="header container">
+        <h1 class="logo">GameHub</h1>
+        <nav class="nav">
+
+            <div class="navlist">
+                
+                <input type="search" placeholder="search..." class="input searchbar" id="search--input">
+                <i class="fa-solid fa-magnifying-glass icon" id="search--icon"></i>
+                <i class="fa-solid fa-cart-shopping icon"></i>
+                <p class="bold navlist-item">shop</p>
+                <p class="bold navlist-item">contact</p>
+                <p class="bold navlist-item">about</p>
+            </div>
+            <div class="hamburger-menu">
+                <i class="fa-solid fa-bars fa-xl icon"></i>
+            </div>
+
+        </nav>
+
+    </header>
+    <div class="dropdown-menu">
+        <input type="search" placeholder="search..." class="dropdown-input" id="search--input">
+        <div class="dropdown-menu-container">
+            <div class="dropdown-menu-item item1">
+                <i class="fa-solid fa-shop fa-2xl dropdown-icon"></i>
+                <h3 class="dropdown-menu-item-text">Store</h3>
+            </div>
+            <div class="dropdown-menu-item item2">
+                <i class="fa-solid fa-message fa-2xl dropdown-icon"></i>
+                <h3 class="dropdown-menu-item-text">Contact</h3>
+            </div>
+            <div class="dropdown-menu-item item3">
+                <i class="fa-solid fa-question fa-2xl dropdown-icon"></i>
+                <h3 class="dropdown-menu-item-text">About</h3>
+            </div>
+            <div class="dropdown-menu-item item4">
+                <i class="fa-solid fa-cart-shopping fa-2xl dropdown-icon"></i>
+                <h3 class="dropdown-menu-item-text">Shopping Cart</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <main>
+        <h1>Your shopping cart</h1>
+        <div class="container cart-page">
+            <div class="left-column">
+                <div class="cart-items-container">
+                    <div class="cart-item">
+                        <img src="/public/assets/01-assassin-cover.jpg" class="cart-img">
+                        <p class="cart-title">Product Title</p>
+                        <p class="cart-price">NOK 599</p>
+                        <p class="cart-qty">1</p>
+                        <i class="fa-regular fa-square-minus icon"></i>
+                    </div>
+                    <div class="cart-total-container">
+                        <p>Total amount</p>
+                        <p class="cart-total">NOK 599</p>
+                    </div>
+                </div>
+                <div class="back-to-shop-container">
+                    <i class="fa-solid fa-arrow-left fa-2xl icon"></i>
+                    <p>Back to shop</p>
+                </div>
+            </div>
+            <div class="checkout-container">
+                <div class="checkout-form-container">
+                    <form action="" class="checkout-form" id="form-shipping-information">
+                        <div class="form-element">
+                            <label class="form-element-label">First name</label>
+                            <input type="text" class="form-element-input">
+                        </div>
+                        <div class="form-element">
+                            <label class="form-element-label">Last name</label>
+                            <input type="text" class="form-element-input">
+                        </div>
+                        <div class="form-element">
+                            <label class="form-element-label">Address</label>
+                            <input type="text" class="form-element-input">
+                        </div>
+                        <div class="form-element">
+                            <label class="form-element-label">Country</label>
+                            <input type="text" class="form-element-input">
+                        </div>
+                        <div class="form-element-container">
+                            <div class="form-element small-input">
+                                <label class="form-element-label">Zip Code</label>
+                                <input type="text" class="form-element-input">
+                            </div>
+                            <div class="form-element small-input">
+                                <label class="form-element-label">City</label>
+                                <input type="text" class="form-element-input ">
+                            </div>
+                            <div class="form-element small-input">
+                                <label class="form-element-label">State</label>
+                                <input type="text" class="form-element-input">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="back-to-shop-container">
+                    <p>Contact Information</p>
+                    <i class="fa-sharp fa-solid fa-arrow-right fa-2xl icon"></i>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+    <footer>
+        <div class="footer container">
+            <div class="footer-navlist">
+                <p class="bold navlist-item">shop</p>
+                <p class="bold navlist-item">contact</p>
+                <p class="bold navlist-item">about</p>
+            </div>
+            <h3>GameHub</h3>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,7 +1,7 @@
 const wordpressData = {
-    url: "http://store.local/wp-json/wc/store/products",
-    test: "http://store.local/wp-json/wc/store/products?category=",
-    id: "http://store.local/wp-json/wc/store/products/",
+    url: "https://gamehub.weavefare.com/wp-json/wc/store/products",
+    test: "https://gamehub.weavefare.com/wp-json/wc/store/products?category=",
+    id: "https://gamehub.weavefare.com/wp-json/wc/store/products/",
     category: {
         "on-sale": 27,
         "top-sellers": 24,

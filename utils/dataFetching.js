@@ -1,7 +1,7 @@
 const wordpressData = {
-    url: "https://gamehub.weavefare.com/wp-json/wc/store/products",
-    test: "https://gamehub.weavefare.com/wp-json/wc/store/products?category=",
-    id: "https://gamehub.weavefare.com/wp-json/wc/store/products/",
+    url: "https://gemehub.tech/wp-json/wc/store/products",
+    test: "https://gemehub.tech/wp-json/wc/store/products?category=",
+    id: "https://gemehub.tech/wp-json/wc/store/products/",
     category: {
         "on-sale": 27,
         "top-sellers": 24,

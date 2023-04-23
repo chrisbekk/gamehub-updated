@@ -25,7 +25,7 @@ function renderFeaturedProduct(product){
 
     const button = document.createElement("div")
     button.classList.add("button")
-    button.innerText = "Expore"
+    button.innerText = "Explore"
     button.addEventListener("click", ()=> document.location.href = "product.html?id=26")
     innerContent.push(button)
 

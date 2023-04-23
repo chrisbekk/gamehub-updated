@@ -2,14 +2,14 @@ function dropDownMenu(){
     const navbar = document.querySelector(".fa-bars")
     const dropdownMenu = document.querySelector(".dropdown-menu")
     navbar.addEventListener("click", function(){
-        console.log("clock")
+        
         dropdownMenu.classList.toggle("show-menu")
 
     })
 
     const navlistItems = document.querySelectorAll(".navlist-item")
     navlistItems.forEach(item =>{
-        console.log(item.textContent)
+        
         switch(item.textContent){
             case "shop":
                 item.addEventListener("click", ()=> document.location.href="store.html")

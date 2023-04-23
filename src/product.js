@@ -69,21 +69,15 @@ function renderProduct(product){
 async function getRelatedProducts(products, queryString){
     const container = document.querySelector(".product-container")
     const currentProductID = queryString
-    console.log(products)
     const currentProduct =  await getProduct(currentProductID)
     const tags = currentProduct.tags
-    console.log(tags)
     const currentProductTags = tags.map(a => a.name)
-    console.log(currentProductTags)
-    const relatedProducts = []
+    
+    
     products.forEach(product => {
-        console.log(product.tags)
         const relatedProductTags = product.tags.map(a => a.name)
-        console.log(relatedProductTags)
         currentProductTags.forEach(tag => {
             if(relatedProductTags.includes(tag)){
-                console.log("yes")
-                console.log(product)
                 product.id === currentProduct.id ? null : container.append(createProductCard(product))
             }
         })

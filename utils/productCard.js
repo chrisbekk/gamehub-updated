@@ -26,6 +26,12 @@ function createProductCard(product){
         
     }
 
+    for(let i = 0; i < product.tags.length; i++){
+        product.tags.forEach(tag=>{
+            productCard.setAttribute("tag", tag.name)
+        })
+    }
+
     const detailsContainer = document.createElement("div")
     detailsContainer.classList.add("product-details")
     

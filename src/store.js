@@ -2,6 +2,7 @@ import dropDownMenu from "../utils/dropDownMenu.js";
 import wordpressData from "../utils/dataFetching.js";
 import createProductCard from "../utils/productCard.js"
 
+
 const {getFeatured, getAll} = wordpressData.products
 
 const logo = document.querySelector(".logo")
@@ -24,8 +25,8 @@ function renderFeaturedProduct(product){
 
     const button = document.createElement("div")
     button.classList.add("button")
-    button.innerText = "To Store"
-    button.addEventListener("click", ()=> document.location.href = "store.html")
+    button.innerText = "Expore"
+    button.addEventListener("click", ()=> document.location.href = "product.html?id=26")
     innerContent.push(button)
 
     container.append(...innerContent)
@@ -56,6 +57,8 @@ function renderProducts(products){
 }
 
 
+
+
 async function main(){
     const searchIcon = document.querySelector("#search--icon")
     const searchBar = document.querySelector("#search--input")
@@ -66,7 +69,7 @@ async function main(){
     renderFeaturedProduct(product)
 
     const products = await getAll()
-    renderProducts(products)
+    renderProducts(products)    
     dropDownMenu()
 }
 

@@ -11,7 +11,7 @@ const handleLocalStorage = {
 
     fromLocalStorage: function(key){
         const storageItem = JSON.parse(localStorage.getItem(key))
-        console.log(storageItem)
+        
         return storageItem
     }
 }

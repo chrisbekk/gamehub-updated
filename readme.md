@@ -65,11 +65,9 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](/images/gamehub_sc.png)
+Gamehub is a e-commerce site focusing on games. The project is a cross-course assignment at Noroff, where the students are asked to display skills within HTML, CSS, Javascript, web design and content management systems.
 
-Gamehub is a e-commerce site focusing on games.
-The project is a cross-course assignment at Noroff, where the students are asked to display skills within HTML, CSS, Javascript, web design and CMS.
-
-The site is primarily running static files, but the product images are fetched via the Wordpress API.
+The site takes advantage of the WordPress API in order to fetch resources that are hosted separately from the front end. Additionally, the WordPress allows for the use of plugins, in order to customize the functionality of the site, and on this project I've used the WooCommerce plugin. WooCommerce allows for functionality such as shopping cart, inventory handling and payment options. It is a powerful tool that will help you streamline the developer experience, and enable robust functionality for the users.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
